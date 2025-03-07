@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Surf</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="script" href="main.js">
+</head>
+<body>
+    <header>
+        <section id="TOP">
+            <a href="index.html"><img src="images/main/Logo.png" alt="Logo da loja"></a>
+            <div class="caixa-pesquisa">
+                <input type="search" name="" id="" placeholder="Pesquisar...">
+                <a href="#" id="pesquisar"><img src="images/main/🦆 icon _magnifying glass_.png" alt="Lupa de busca"></a>
+            </div>
+            <div class="icones">
+                <button class="A" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/main/🦆 icon _person_.png" alt="Login"></button>
+                <a href=""><img src="images/main/🦆 icon _heart_.png" alt="Favoritos"></a>
+                <a href="carrinho.html" class="tooltip">
+                    <img src="images/main/🦆 icon _cart_ (1).png" alt="Carrinho">
+                    <span class="tooltiptext"><img src="images/main/Group 29.png" alt=""></span>
+                </a>
+            </div>
+        </section>
+
+        <section id="BOTTOM">
+            <a href="#">NOVIDADES</a>
+            <a href="#">SKATE</a>
+            <a href="#">TÊNIS</a>
+            <a href="#">ÓCULOS</a>
+            <a href="#">FEMININO</a>
+            <a href="#">PERSONALIZE</a>
+            <a href="#">RELÓGIOS</a>
+            <a href="#">ACESSÓRIOS</a>
+            <a href="#">PROTEÇÃO UV</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="fotos">
+            <img src="images/Krypto Grande.png" alt="" class="fgrande">
+            <img src="images/Krypto Grande.png" alt="" class="fpequena">
+            <img src="images/image 13 (2).png" alt="" class="fpequena">
+            <img src="images/image 14 (1).png" alt="" class="fpequena">
+        </section>
+
+        <section class="descricao">
+            <h1 style="color: #00ACE4; font-size: 48pt;">Prancha de Surf Krypto</h1>
+            <img src="images/avali (1).png" alt="" style="width: 195px; height: 33px;">
+            <h2 style="color: #00ACE4; font-size: 24pt;">Simule o frete e prazo</h2>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiP08buiviLAxX_uJUCHWaZGjQQFnoECAoQAQ&url=http%3A%2F%2Fwww.buscacep.correios.com.br%2F&usg=AOvVaw02Q27Gr8fAjPpn3fGbyWYJ&opi=89978449"><h2 style="color: #FF7B43; font-size: 20pt;">Não sabe o CEP?</h2></a>
+        </section>
+
+        <section class="comprar">
+            <div>
+            <h1 style="color: #FF7B43; font-size: 38pt; padding-top: 10vh;">POR:    R$1.299,99</h1>
+            <h3 style="color: #FF7B43;">10x de R$129,99 sem juros</h3>
+        </div>
+
+        <div style="padding-top: 10vh;">
+            <button type="button" onclick="carrinho.html" class="comprarbtn">COMPRAR</button>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="carrinho.html"><img src="images/main/🦆 icon _cart_ (1).png" alt=""></a>
+                <a href="carrinho.html" style="font-size: 14pt; text-decoration: none; color: #0076C0;">ADICIONAR AO CARRINHO</a>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contato">
+            <div class="sac">
+                <img src="images/main/SAC.png" alt="Serviço de atendimento ao Cliente">
+                <p>(84) 92435-5576</p>
+            </div>
+
+            <div class="wtz">
+                <img src="images/main/Vector.png" alt="Whatsapp">
+                <p>(84) 92435-5576</p>
+            </div>
+        </section>
+
+        <section id="redes">
+            <a href="instagram.com"><img src="images/main/instagram-alt 1.png" alt="Link do nosso instagram"></a>
+            <a href="facebook.com"><img src="images/main/facebook 1.png" alt="Link do nosso facebook"></a>
+            <a href="youtube.com"><img src="images/main/youtube 1.png" alt="Link do nosso canal no youtube"></a>
+            <a href="x.com"><img src="images/main/X 1.png" alt="Link do nosso perfil no X (falecido twitter)"></a>
+        </section>
+
+        <section id="uteis">
+            <a href="#">TERMOS DE USO</a>
+            <a href="#">CONFIGURAÇÕES DE COOKIES</a>
+            <a href="historia.html">NOSSA HISTÓRIA</a>
+            <a href="#">CENTRAL DE AJUDA</a>
+            <a href="#">POLITICA DE DEVOLUÇÃO</a>
+        </section>
+    </footer>
+
+
+
+
+    <div id="id01" class="modal">
+    
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <div class="logtop">
+            <p>ENTRE OU CADASTRE-SE</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <input type="text" placeholder="E-mail" name="uname" required>
+
+          <input type="password" placeholder="Senha" name="psw" required>
+
+            <div class="LE">
+                <button class="B" type="submit">LOGIN</button>
+                <span class="psw" style="font-size: 18pt;">Esqueci minha <a href="#">senha</a></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id02').style.display='block', document.getElementById('id01').style.display='none'" class="cancelbtn">CRIE SUA CONTA</button>
+        </div>
+
+
+
+      </form>
+    </div>
+
+    <div id="id02" class="modal">
+    
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <div class="logtop">
+              <p>CRIE SUA CONTA</p>
+            </div>
+          </div>
+  
+          <div class="container">
+            <input type="text" placeholder="E-mail" name="uname" required>
+            <input type="text" placeholder="Confirme o E-mail" name="uname" required>
+            <input type="text" placeholder="Nome" name="uname" required>
+            <input type="text" placeholder="Sobrenome" name="uname" required>
+            <input type="text" placeholder="CPF" name="uname" required>
+            <input type="text" placeholder="Telefone" name="uname" required>
+  
+            <input type="password" placeholder="Digite sua senha" name="psw" required>
+            <input type="password" placeholder="Confirme sua senha" name="psw" required>
+  
+              <div class="LE">
+                  <button class="B" type="submit" style="width: 100%;">CRIAR CONTA</button>
+              </div>
+          </div>
+
+        </form>
+      </div>
+
+
+</body>
+</html>
